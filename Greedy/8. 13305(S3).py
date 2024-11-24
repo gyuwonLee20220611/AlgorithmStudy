@@ -6,7 +6,7 @@ min = charge[0]
 
 for i in range(1,n-1,):
     if min <= charge[i]:
-        result += charge[i] * dst[i]
+        result += min * dst[i]
     else:
         min = charge[i]
         result += min * dst[i]
