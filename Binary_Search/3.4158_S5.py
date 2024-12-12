@@ -6,20 +6,12 @@ while True:
     sun = []
 
     while len(sang) != n:
-        try:
-            a = int(input())
-            sang.append(a)
-
-        except:
-            continue
+        a = int(input())
+        sang.append(a)
 
     while len(sun) != m:
-        try:
-            a = int(input())
-            sun.append(a)
-
-        except:
-            continue
+        a = int(input())
+        sun.append(a)
 
     result = [0]
 
