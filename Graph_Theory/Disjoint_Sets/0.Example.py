@@ -15,7 +15,6 @@ def union_parents(parent, a, b):
 
 
 v, e = map(int, input().split())
-
 parents = [i for i in range(v + 1)]
 
 for i in range(e):
@@ -24,7 +23,7 @@ for i in range(e):
 
 print("각 원소가 속한 그룹: ", end = '')
 for i in range(1, v + 1):
-    print(find_parent(parents, parents[i]), end = ' ')
+    print(find_parent(parents, i), end = ' ')
 
 print()
 
