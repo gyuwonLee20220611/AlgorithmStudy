@@ -27,14 +27,21 @@ try:
                 end = mid - 1
             elif target > result:
                 start = mid + 1
-        print(mid)
-        while True:
-            a = int((y + mid - 1) / (x + mid - 1) * 100)
-            if target == result and target - 1 == a:
-                break
-            else:
-                mid -= 1
 
+
+
+        while True:
+            result = int((y + mid-1) / (x + mid-1) * 100)
+            if result == z:
+                mid += 1
+                result = int((y + mid-1) / (x + mid-1) * 100)
+                if result == z:
+                    break
+                else:
+                    mid -= 1
+                    break
+            else:
+                mid -= 2
         print(mid)
 except:
     print(-1)
